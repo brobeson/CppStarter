@@ -1,0 +1,16 @@
+name: Quality Control
+on:
+  pull_request:
+  push:
+  workflow_dispatch:
+# Adapted from https://stackoverflow.com/a/72408109
+concurrency:
+  group: ${{github.workflow}}-${{github.event.pull_request.number || github.ref}}
+  cancel-in-progress: true
+jobs:
+  support_files:
+    name: Project Support Files
+    uses: brobeson/brobeson/.github/workflows/support_files.yaml@main
+  cpp:
+    name: C++
+    uses: brobeson/brobeson/.github/workflows/cpp.yaml@main

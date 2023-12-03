@@ -1,0 +1,18 @@
+{
+  "recommendations": [
+    "bierner.github-markdown-preview",
+    "brunnerh.insert-unicode",
+    "cheshirekow.cmake-format",
+    "cschlosser.doxdocgen",
+    "DavidAnson.vscode-markdownlint",
+    "eamodio.gitlens",
+    "esbenp.prettier-vscode",
+    "Gruntfuggly.todo-tree",
+    "IBM.output-colorizer",
+    "jasonnutter.vscode-codeowners",
+    "jeff-hykin.better-cpp-syntax",
+    "mhutchie.git-graph",
+    "ms-vscode.cpptools-extension-pack",
+    "streetsidesoftware.code-spell-checker"
+  ]
+}

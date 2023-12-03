@@ -1,0 +1,14 @@
+---
+# prettier-ignore
+Checks: >
+  clang-diagnostic-*,
+  clang-analyzer-*,
+  *,
+  -altera*,
+  -fuchsia*,
+  -llvmlibc*,
+  -llvm-header-guard
+WarningsAsErrors: "*"
+HeaderFilterRegex: ""
+AnalyzeTemporaryDtors: false
+FormatStyle: file
