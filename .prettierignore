@@ -7,7 +7,6 @@
 !*.json
 !*.md
 !*.yaml
-!*.yml
 
 # Include files that don't use file extensions
 .clang-format

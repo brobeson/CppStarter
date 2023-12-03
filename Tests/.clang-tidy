@@ -1,0 +1,6 @@
+---
+InheritParentConfig: true
+# prettier-ignore
+Checks: -readability-magic-numbers
+CheckOptions:
+  readability-function-cognitive-complexity.IgnoreMacros: true

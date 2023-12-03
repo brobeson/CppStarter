@@ -1,4 +1,4 @@
-name: Template Quality
+name: Quality Control
 on:
   pull_request:
   push:
@@ -9,5 +9,8 @@ concurrency:
   cancel-in-progress: true
 jobs:
   support_files:
-    name: Support Files
+    name: Project Support Files
     uses: brobeson/brobeson/.github/workflows/support_files.yaml@main
+  cpp:
+    name: C++
+    uses: brobeson/brobeson/.github/workflows/cpp.yaml@main
