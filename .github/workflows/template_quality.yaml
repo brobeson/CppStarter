@@ -10,4 +10,4 @@ concurrency:
 jobs:
   support_files:
     name: Support Files
-    uses: brobeson/brobeson/.github/workflows/support_files.yaml@main
+    uses: brobeson/brobeson/.github/workflows/support_files.yaml@commit_prettier
