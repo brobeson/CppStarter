@@ -1,4 +1,5 @@
 ---
+# cspell:words altera llvmlibc
 # prettier-ignore
 Checks: >
   clang-diagnostic-*,
