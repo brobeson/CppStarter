@@ -7,9 +7,9 @@
   "editor.formatOnSave": true,
   "editor.tabSize": 2,
   "[cmake]": {
-    "editor.defaultFormatter": "cheshirekow.cmake-format"
+    "editor.defaultFormatter": "cheshirekow.cmake-format" // cspell:disable-line
   },
-  "[json][makdown][yaml]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  "[json][markdown][yaml]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode" // cspell:disable-line
   }
 }

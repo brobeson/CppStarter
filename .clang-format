@@ -33,7 +33,7 @@ BinPackArguments: false
 BinPackParameters: false
 BitFieldColonSpacing: Both
 BreakBeforeBinaryOperators: All
-BreakBeforeBraces: Allman
+BreakBeforeBraces: Allman  # cspell:disable-line
 QualifierAlignment: Left
 ConstructorInitializerIndentWidth: 2
 ContinuationIndentWidth: 2
