@@ -1,0 +1,8 @@
+name: New Project Tidy
+on: create
+jobs:
+  tidy:
+    name: Tidy
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Hello World"
