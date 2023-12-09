@@ -6,6 +6,8 @@ jobs:
     name: Tidy
     runs-on: ubuntu-latest
     steps:
+      - name: Clone the New Repository
+        uses: actions/checkout@v3
       - run: |
           echo "::notice ::${{github.repository_owner}}"
           echo "::notice ::${{github.event.repository.name}}"
