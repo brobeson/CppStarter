@@ -9,3 +9,7 @@ jobs:
       - run: |
           echo "::notice ::${{github.repository_owner}}"
           echo "::notice ::${{github.event.repository.name}}"
+      - run: >
+          sed --in-place 's/@PROJECT@/${{github.event.repository.name}}/g' *
+          **/CMakeLists.txt
+      - run: git status
