@@ -1,8 +1,11 @@
 name: New Project Tidy
-on: create
+# on: create
+on: push
 jobs:
   tidy:
     name: Tidy
     runs-on: ubuntu-latest
     steps:
-      - run: echo "Hello World"
+      - run: |
+          echo "::notice ::${{github.repository_owner}}"
+          echo "::notice ::${{github.event.repository.name}}"
