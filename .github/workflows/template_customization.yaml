@@ -26,14 +26,6 @@ jobs:
         env:
           GH_TOKEN: ${{github.token}}
         run: .github/workflows/customize.sh
-      # - name: Delete template README content
-      #   run: sed --in-place '4,$d' README.md
-      # - name: Update project name and owner
-      #   run: |
-      #     sed --in-place 's/CppStarter/'${PROJECT_NAME}'/g' README.md
-      #     sed --in-place 's/brobeson/'${OWNER}'/g' README.md
-      # - name: Remove this workflow
-      #   run: rm .github/workflows/template_customization.yaml
       - name: Commit and Push
         uses: EndBug/add-and-commit@v9
         with:
