@@ -35,3 +35,23 @@ This workflow runs my [project file analysis workflow](https://github.com/brobes
 1. Markdown lint
 1. Formatting with Prettier
 1. Spell check with CSpell
+
+### Visual Studio Code Configuration
+
+I use [Visual Studio Code](https://code.visualstudio.com/), so this template includes settings, tasks, and extension recommendations for that IDE.
+
+#### Tasks
+
+The VS Code configuration includes a set of tasks to emulate the GitHub workflows.
+These can help you check the entire code base of your project before pushing.
+Each task has the prefix `ProjectName:`, where "ProjectName" is the name of the repo you create from the template.
+The available tasks are:
+
+- `ProjectName: Spell Check` - Run CSpell on all files in the repository.
+  Spelling mistakes are captured in the Problems panel.
+- `ProjectName: Markdownlint` - Run Markdownlint on all Markdown files in the repository.
+  Markdown mistakes are captured in the Problems panel.
+- `ProjectName: Prettier Format` - Run Prettier on all files in the repository.
+  This doesn't report formatting errors; it reformats the files in-place.
+- `ProjectName: Pipeline` - Run all the other tasks.
+  This is a shortcut to invoke all the other tasks with a single command.

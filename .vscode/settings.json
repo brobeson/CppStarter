@@ -1,0 +1,9 @@
+{
+  // cspell:ignore esbenp
+  "editor.formatOnSave": true,
+  "editor.tabSize": 2,
+  "githubIssues.issueBranchTitle": "${issueNumber}-${sanitizedIssueTitle}",
+  "[json][markdown][yaml]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
+}
