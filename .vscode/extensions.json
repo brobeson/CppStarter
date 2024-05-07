@@ -1,19 +1,26 @@
 // cspell:disable
 {
+  // cspell:ignore bierner cheshirekow cschlosser doxdocgen davidanson eamodio
+  // cspell:ignore esbenp hykin krosf mhutchie cpptools twxs surajbarkale
   "recommendations": [
     "bierner.github-markdown-preview",
     "brunnerh.insert-unicode",
     "cheshirekow.cmake-format",
     "cschlosser.doxdocgen",
-    "DavidAnson.vscode-markdownlint",
+    "davidanson.vscode-markdownlint",
     "eamodio.gitlens",
     "esbenp.prettier-vscode",
+    "github.vscode-github-actions",
+    "github.vscode-pull-request-github",
     "Gruntfuggly.todo-tree",
     "IBM.output-colorizer",
     "jasonnutter.vscode-codeowners",
     "jeff-hykin.better-cpp-syntax",
+    "krosf.vscode-valgrind",
     "mhutchie.git-graph",
     "ms-vscode.cpptools-extension-pack",
-    "streetsidesoftware.code-spell-checker"
+    "streetsidesoftware.code-spell-checker",
+    "surajbarkale.ninja",
+    "twxs.cmake"
   ]
 }

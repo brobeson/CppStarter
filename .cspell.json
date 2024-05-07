@@ -1,4 +1,5 @@
 {
   "version": "0.2",
-  "words": ["brobeson", "doxygen"]
+  "words": ["brobeson", "valgrind"],
+  "ignorePaths": [".git/*"]
 }

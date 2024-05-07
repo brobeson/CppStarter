@@ -1,4 +1,5 @@
 {
+  // cspell:ignore esbenp
   "C_Cpp.autoAddFileAssociations": false,
   "C_Cpp.codeAnalysis.clangTidy.enabled": true,
   "C_Cpp.default.configurationProvider": "ms-vscode.cmake-tools",
@@ -6,6 +7,7 @@
   "cmake.buildDirectory": "${workspaceFolder}/build",
   "editor.formatOnSave": true,
   "editor.tabSize": 2,
+  "githubIssues.issueBranchTitle": "${issueNumber}-${sanitizedIssueTitle}",
   "[cmake]": {
     "editor.defaultFormatter": "cheshirekow.cmake-format" // cspell:disable-line
   },

@@ -12,11 +12,14 @@ set -eu
 sed --in-place '4,$d' README.md
 
 # Update the project name and owner in the remaining files.
-files_to_sed="LICENSE README.md .github/**/*"
-# shellcheck disable=SC2086
-sed --in-place "s/CppStarter/${PROJECT_NAME}/g" ${files_to_sed}
-# shellcheck disable=SC2086
-sed --in-place "s/brobeson/${OWNER}/g" README.md ${files_to_sed}
+sed --in-place \
+  -e "s/CppStarter/${PROJECT_NAME}/g" \
+  -e "s/brobeson/${OWNER}/g" \
+  LICENSE README.md .github/**/* .vscode/*
+
+# That sed catches the static analysis workflow, but nothing should change in
+# that file. Just git revert it.
+git restore .github/workflows/static_analysis.yaml
 
 # Create the "Next Release" milestone
 gh api \
