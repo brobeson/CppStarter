@@ -38,7 +38,10 @@
         "id": "tools",
         "color": "terminal.ansiBlue"
       },
-      "type": "markdownlint",
+      "type": "shell",
+      "command": "markdownlint",
+      "args": ["--ignore", "build/", "--dot", "--fix", "."],
+      "options": { "cwd": "${workspaceFolder}" },
       "problemMatcher": {
         "applyTo": "allDocuments",
         "fileLocation": "relative",

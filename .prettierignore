@@ -15,3 +15,6 @@
 
 # Check subdirectories
 !*/
+
+# Except the build directory
+build/

@@ -15,7 +15,11 @@ sed --in-place '4,$d' README.md
 sed --in-place \
   -e "s/CppStarter/${PROJECT_NAME}/g" \
   -e "s/brobeson/${OWNER}/g" \
-  LICENSE README.md .github/**/* .vscode/*
+  LICENSE ./**/*.md .github/**/* .vscode/* ./**/CMakeLists.txt
+
+# Update the CMake project(DESCRIPTION ...)
+DESCRIPTION=$(gh repo view --json description --jq .description)
+sed --in-place "s/DESCRIPTION .*/DESCRIPTION ${DESCRIPTION}/" CMakeLists.txt
 
 # That sed catches the static analysis workflow, but nothing should change in
 # that file. Just git revert it.
