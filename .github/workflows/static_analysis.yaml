@@ -10,4 +10,9 @@ concurrency:
 jobs:
   support_files:
     name: Support Files
-    uses: brobeson/brobeson/.github/workflows/support_files.yaml@commit_prettier
+    uses: brobeson/SupportFileQuality/.github/workflows/support_files.yaml@v1
+  build:
+    name: C++
+    uses: brobeson/CppWorkflow/.github/workflows/build_all_the_things.yaml@v1
+    with:
+      configure-definitions: -D CppStarter_DEV_BUILD:BOOL=on

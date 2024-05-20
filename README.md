@@ -27,14 +27,21 @@ The workflow performs the following steps:
 
 This template repository provides all the boiler plate to get started with a high quality C++ project.
 
-### Static Analysis Workflow
+### A C++ Project
 
-The template includes a static analysis workflow.
-This workflow runs my [project file analysis workflow](https://github.com/brobeson/SupportFileQuality).
+The template provides a complete C++ project that builds and runs.
 
-1. Markdown lint
-1. Formatting with Prettier
-1. Spell check with CSpell
+- CMake infrastructure to generate a build system.
+- A simple unit test that builds and runs.
+
+### GitHub Workflows
+
+The template includes GitHub workflows that run right out of the box.
+
+- [Support File Quality](https://github.com/brobeson/SupportFileQuality)  
+  This workflow ensures there are no mistakes in project support files such as Markdown documentation and tool configuration files.
+- [C++ Build](https://github.com/brobeson/CppWorkflow)  
+  Runs debug and release builds on Ubuntu, MacOS, and Windows.
 
 ### Visual Studio Code Configuration
 

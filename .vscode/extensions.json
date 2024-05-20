@@ -1,7 +1,7 @@
 // cspell:disable
 {
   // cspell:ignore bierner cheshirekow cschlosser doxdocgen davidanson eamodio
-  // cspell:ignore esbenp hykin krosf mhutchie cpptools twxs surajbarkale
+  // cspell:ignore esbenp hykin krosf mhutchie cpptools twxs
   "recommendations": [
     "bierner.github-markdown-preview",
     "brunnerh.insert-unicode",
@@ -20,7 +20,6 @@
     "mhutchie.git-graph",
     "ms-vscode.cpptools-extension-pack",
     "streetsidesoftware.code-spell-checker",
-    "surajbarkale.ninja",
     "twxs.cmake"
   ]
 }
