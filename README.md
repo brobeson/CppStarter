@@ -42,6 +42,8 @@ The template includes GitHub workflows that run right out of the box.
   This workflow ensures there are no mistakes in project support files such as Markdown documentation and tool configuration files.
 - [C++ Build](https://github.com/brobeson/CppWorkflow)  
   Runs debug and release builds on Ubuntu, MacOS, and Windows.
+- [C++ Static Analysis](https://github.com/CppWorkflow)  
+  Runs static analysis tools on the C++ code.
 
 ### Visual Studio Code Configuration
 
