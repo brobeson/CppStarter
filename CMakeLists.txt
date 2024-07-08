@@ -10,5 +10,14 @@ option(CppStarter_DEV_BUILD "Configure the build system for developing CppStarte
 
 if(CppStarter_DEV_BUILD)
   enable_testing()
+  include(FetchContent)
+  fetchcontent_declare(
+    cmake-tools
+    GIT_REPOSITORY https://github.com/brobeson/cmake-tools.git
+    GIT_TAG "9-add-an-address-sanitizer-build-type"
+  )
+  fetchcontent_makeavailable(cmake-tools)
+  list(APPEND CMAKE_MODULE_PATH "${cmake-tools_SOURCE_DIR}")
+  include(CTSanitizers)
   add_subdirectory(tests)
 endif()

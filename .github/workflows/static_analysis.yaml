@@ -11,6 +11,13 @@ jobs:
   support_files:
     name: Support Files
     uses: brobeson/SupportFileQuality/.github/workflows/support_files.yaml@v1
+  test-build:
+    name: ASan Build
+    uses: brobeson/CppWorkflow/.github/workflows/cpp_build.yaml@v1
+    with:
+      build-type: ASan
+      configure-definitions: -D CppStarter_DEV_BUILD:BOOL=on
+      os: ubuntu-latest
   build:
     name: C++ Builds
     uses: brobeson/CppWorkflow/.github/workflows/build_all_the_things.yaml@v1
