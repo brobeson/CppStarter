@@ -8,9 +8,9 @@ concurrency:
   group: ${{github.workflow}}-${{github.event.pull_request.number || github.ref}}
   cancel-in-progress: true
 jobs:
-  # support_files:
-  #   name: Support Files
-  #   uses: brobeson/SupportFileQuality/.github/workflows/support_files.yaml@v1
+  support_files:
+    name: Support Files
+    uses: brobeson/SupportFileQuality/.github/workflows/support_files.yaml@v1
   test-build:
     name: ASan Build
     uses: brobeson/CppWorkflow/.github/workflows/cpp_build.yaml@v1
@@ -18,13 +18,13 @@ jobs:
       build-type: ASan
       configure-definitions: -D CppStarter_DEV_BUILD:BOOL=on
       os: ubuntu-latest
-  # build:
-  #   name: C++ Builds
-  #   uses: brobeson/CppWorkflow/.github/workflows/build_all_the_things.yaml@v1
-  #   with:
-  #     configure-definitions: -D CppStarter_DEV_BUILD:BOOL=on
-  # static_analysis:
-  #   name: C++ Code Quality
-  #   uses: brobeson/CppWorkflow/.github/workflows/cpp_static_analysis.yaml@main
-  #   with:
-  #     configure-definitions: -D CppStarter_DEV_BUILD:BOOL=on
+  build:
+    name: C++ Builds
+    uses: brobeson/CppWorkflow/.github/workflows/build_all_the_things.yaml@v1
+    with:
+      configure-definitions: -D CppStarter_DEV_BUILD:BOOL=on
+  static_analysis:
+    name: C++ Code Quality
+    uses: brobeson/CppWorkflow/.github/workflows/cpp_static_analysis.yaml@main
+    with:
+      configure-definitions: -D CppStarter_DEV_BUILD:BOOL=on
