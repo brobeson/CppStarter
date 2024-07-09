@@ -11,6 +11,7 @@ option(CppStarter_DEV_BUILD "Configure the build system for developing CppStarte
 if(CppStarter_DEV_BUILD)
   enable_testing()
   include(FetchContent)
+  # cspell:ignore fetchcontent makeavailable
   fetchcontent_declare(
     cmake-tools
     GIT_REPOSITORY https://github.com/brobeson/cmake-tools.git
