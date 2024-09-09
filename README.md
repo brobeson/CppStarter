@@ -10,18 +10,24 @@ This is a template repository to start a new C++ project.
 1. Fill out the form for your new repository.
    The values shouldn't affect the template's behavior.
 1. Wait for GitHub to create your new repository.
-1. After GitHub creates your repository, it should start the [New Project Setup workflow](/.github/workflows/template_customization.yaml).
-   See the next section for details.
+1. After GitHub creates your repository, run the [New Project Setup workflow](/.github/workflows/template_customization.yaml).
+   1. Click the **Actions** tab.
+   1. Click the **New Project Setup** workflow.
+   1. Click the **Run workflow** combobox.
+   1. Set **Use workflow from** to `Branch: main`.
+   1. Click the **Run workflow** button.
 
 ### New Project Setup Workflow
 
-When you create a repository from this template, GitHub should automatically run this workflow to customize your repository.
-The workflow performs the following steps:
+The New Project Setup workflow customizes your new project.
+The workflow performs these steps:
 
-1. Clone the repository.
-1. Change all instances of `CppStarter` to the new repository's name.
-1. Remove this workflow file.
-1. Commit and push the changes to `main`.
+1. Clone the repository
+1. Change all instances of `CppStarter` to the new repository's name
+1. Remove the workflow file and shell script
+1. Remove these instructions from README.md
+1. Create a `Next Release` milestone
+1. Commit and push the changes to `main`
 
 ## What You Get From This Template
 

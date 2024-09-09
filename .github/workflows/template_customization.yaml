@@ -1,6 +1,6 @@
 # cspell:words pathspec
 name: New Project Setup
-on: create
+on: workflow_dispatch
 jobs:
   tidy:
     name: Customize
